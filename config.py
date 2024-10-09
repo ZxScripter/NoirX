@@ -6,23 +6,23 @@ from logging.handlers import RotatingFileHandler
 TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6088218026:AAEI6-9t9D7cCOmG9c8kUvPALZ5vIxE5tXc")
 
 # Your API ID from my.telegram.org
-APP_ID = int(os.environ.get("APP_ID", "23902408"))
+APP_ID = int(os.environ.get("APP_ID", "20860620"))
 
 # Your API Hash from my.telegram.org
-API_HASH = os.environ.get("API_HASH", "6a36a4ef2f07d63aeba7b53b99c64d73")
+API_HASH = os.environ.get("API_HASH", "25d2343b36fc5aea3604c6c50a8e2b59")
 
 # Your db channel Id
 CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002213021629"))
 
 # OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "7179837246"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "6199677027"))
 
 # Port
 PORT = os.environ.get("PORT", "7070")
 
 # Database
-DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://mex:rex@cluster7.jrzowqz.mongodb.net/?retryWrites=true&w=majority")
-DB_NAME = os.environ.get("DATABASE_NAME", "Chuuttiya")
+DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://madara:madara@cluster0.tjfuu1g.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DB_NAME = os.environ.get("DATABASE_NAME", "Madara")
 
 # Force sub channel id, if you want enable force sub
 FORCE_CHANNEL = int(os.environ.get("FORCE_CHANNEL", "-1002044619047"))
