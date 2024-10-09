@@ -32,8 +32,8 @@ FORCE_CHANNEL3 = int(os.environ.get("FORCE_CHANNEL3", "-1002044619047"))
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 # Mainly add graph else telegraph link
-START_PIC = os.environ.get("START_PIC", "https://graph.org/file/b1549fd4bc4a2b7dd04aa.jpg")
-FORCE_PIC = os.environ.get("FORCE_PIC", "https://graph.org/file/3ab8716b37894ef7460e9.jpg")
+START_PIC = os.environ.get("START_PIC", "https://envs.sh/nDg.jpg")
+FORCE_PIC = os.environ.get("FORCE_PIC", "https://envs.sh/nDg.jpg")
 
 # Add your text according to you
 HELP_TXT = "<b>Hi!\nI am a bot!\n\nMade for @Anime_Bloodline⚡</b>"
