@@ -52,7 +52,7 @@
       },
     "START_MSG": {
       "description": "Optional: start message of bot, use HTML parsemode format",
-      "value": "<b></b>"
+      "value": "<b>Hello {first}\n\nI am Madara Uchiha a  file store bot Made for @Anime_Bloodline ⚡</b>"
     },
     "FORCE_SUB_MESSAGE": {
       "description": "Optional: Force Sub message of bot, use HTML parsemode format",
