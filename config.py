@@ -40,7 +40,7 @@ HELP_TXT = "<b>Hi!\nI am a bot!\n\nMade for @Anime_Bloodline⚡</b>"
 ABOUT_TXT = "<b>╔════════════⦿\n├⋗ ᴄʀᴇᴀᴛᴏʀ : <a href='tg://user?id={6199677027}'>ઝꪋઝꪋઽꫝꪱ</a>\n├⋗ ʟᴀɴɢᴜᴀɢᴇ : <code>Python3</code>\n├⋗ ʟɪʙʀᴀʀʏ : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio {__version__}</a>\n├⋗ ꜱᴏᴜʀᴄᴇ ᴄᴏᴅᴇ : <a href=https://t.me/ShadowKakashi>File Store Bot</a>\n├⋗ Main Channel : <a href=https://t.me/Anime_Bloodline>Anime Bloodline</a>\n├⋗ Support Group : <a href=https://t.me/community_Weebs>Community Weebs</a>\n╚═════════════════⦿</b>"
 
 # start message
-START_MSG = os.environ.get("START_MESSAGE", "<b>Hello {first}\n\nI am Madara Uchiha a  file store bot Made for @Anime_Bloodline ⚡</b>")
+START_MSG = os.environ.get("START_MESSAGE", "<b>Hello {first}\n\nI am Madara Uchiha a file store bot Made for @Anime_Bloodline ⚡</b>")
 try:
     ADMINS=[7179837246]
     for x in (os.environ.get("ADMINS", "7179837246").split()):
