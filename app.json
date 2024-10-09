@@ -7,7 +7,7 @@
     "file",
     "sharing"
   ],
-  "repository": "https://github.com/Sahil0976",
+  "repository": "https://github.com/Jatin498",
   "logo": "https://ibb.co/rmT4D1R",
   "env": {
     "TG_BOT_TOKEN": { 
@@ -16,7 +16,7 @@
     },
     "OWNER_ID": {
       "description": "An integer of consisting of your owner ID",
-      "value": "5090651635"
+      "value": "0"
     },
     "APP_ID":{
       "description": "your app id, take it from my.telegram.org",
@@ -28,7 +28,7 @@
     },
     "DATABASE_NAME":{
       "description": "Enter your DATABASE_NAME ",
-      "value": "sahilnew"
+      "value": "Kakashi69"
     },
     "API_HASH":{
       "description": "your api hash, take it from my.telegram.org",
