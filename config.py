@@ -37,7 +37,7 @@ FORCE_PIC = os.environ.get("FORCE_PIC", "https://graph.org/file/3ab8716b37894ef7
 
 # Add your text according to you
 HELP_TXT = "<b>Hi!\nI am a bot!\n\nMade for @Anime_Bloodline⚡</b>"
-ABOUT_TXT = "<b>Hi {first}!\n\n● ᴄʀᴇᴀᴛᴏʀ: <a href=https://t.me/RarelySukuna>S U K U N A</a>\n● ꜰᴏᴜɴᴅᴇʀ ᴏꜰ : <a href=https://t.me/Anime_Bloodline>ᴀɴɪᴍᴇ Bloodlina</a>\n● ᴏɴɢᴏɪɴɢ ᴄʜᴀɴɴᴇʟ : <a href=https://t.me/Ongoing_Anime_Bloodline>ᴏɴɢᴏɪɴɢ Bloodline</a>\n● Lɪʙʀᴀʀy : <a href=https://github.com/pyrogram>Pyʀᴏɢʀᴀᴍ</b>"
+ABOUT_TXT = "<b>╔════════════⦿\n├⋗ ᴄʀᴇᴀᴛᴏʀ : <a href='tg://user?id={6199677027}'>ઝꪋઝꪋઽꫝꪱ</a>\n├⋗ ʟᴀɴɢᴜᴀɢᴇ : <code>Python3</code>\n├⋗ ʟɪʙʀᴀʀʏ : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio {__version__}</a>\n├⋗ ꜱᴏᴜʀᴄᴇ ᴄᴏᴅᴇ : <a href=https://t.me/ShadowKakashi>File Store Bot</a>\n├⋗ Main Channel : <a href=https://t.me/Anime_Bloodline>Anime Bloodline</a>\n├⋗ Support Group : <a href=https://t.me/community_Weebs>Community Weebs</a>\n╚═════════════════⦿</b>"
 
 # start message
 START_MSG = os.environ.get("START_MESSAGE", "<b>ʜɪ ᴛʜᴇʀᴇ... {first}! 💥\n\nɪ ᴀᴍ ᴀ ꜰɪʟᴇ ꜱᴛᴏʀᴇ ʙᴏᴛ...!\nɪ ᴄᴀɴ ᴘʀᴏᴠɪᴅᴇ ᴘʀɪᴠᴀᴛᴇ ꜰɪʟᴇꜱ ᴛʜʀᴏᴜɢʜ ᴀ ꜱᴘᴇᴄɪꜰɪᴄ ʟɪɴᴋ....!\nᴘᴏᴡᴇʀᴇᴅ ʙʏ - @Anime_Bloodline</b>")
