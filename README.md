@@ -18,7 +18,7 @@
 - Can be deployed on Koyeb Either
 
 
-### Admin Commands
+### Admin Commands Note PLEASE ADD IT IN GROUP ELSE COMMANDS WILL NOT WORK🤧
 
 ```
 start - start the bot or get posts
@@ -32,6 +32,7 @@ del_admin - (Owner Only) Delete Admins
 admins - (Owner Only) Show Admin List
 forcesub1 - (Owner Only) Change Forcesub Channel 1
 forcesub2 - (Owner Only) Change Forcesub Channel 2
+forcesub3 - (Owner Only) Change Forcesub Channel 3
 ```
 
 
