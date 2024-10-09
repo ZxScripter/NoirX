@@ -102,18 +102,18 @@ async def add_2(channel1: int):
 
 
 # Function to check if a channel exists
-async def present_channel2():
+async def present_channel3():
     try:
-        config = channel_data2.find_one({})
-        return config.get('force_sub_channel_2', FORCE_CHANNEL2)
+        config = channel_data3.find_one({})
+        return config.get('force_sub_channel_3', FORCE_CHANNEL3)
     except Exception as e:
         print(f"Failed to get force subscribe channels: {e}")
-        return FORCE_CHANNEL2
+        return FORCE_CHANNEL3
 
-async def add_2(channel1: int):
+async def add_3(channel1: int):
     try:
-        await channel_data2.update_one({}, {'$set': {'force_sub_channel_2': channel1}}, upsert=True)
-        print(f"Force subscribe channel 2 set successfully: {channel1}")
+        await channel_data3.update_one({}, {'$set': {'force_sub_channel_3': channel1}}, upsert=True)
+        print(f"Force subscribe channel 3 set successfully: {channel1}")
     except Exception as e:
         print(f"Failed to set force subscribe channel 1: {e}")
 
