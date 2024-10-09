@@ -18,7 +18,7 @@ CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002213021629"))
 OWNER_ID = int(os.environ.get("OWNER_ID", "6199677027"))
 
 # Port
-PORT = os.environ.get("PORT", "7060")
+PORT = os.environ.get("PORT", "7040")
 
 # Database
 DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://madara:madara@cluster0.tjfuu1g.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
@@ -37,7 +37,7 @@ FORCE_PIC = os.environ.get("FORCE_PIC", "https://envs.sh/nDg.jpg")
 
 # Add your text according to you
 HELP_TXT = "<b>Hi!\nI am a bot!\n\nMade for @Anime_Bloodline⚡</b>"
-ABOUT_TXT = "<b>╔════════════⦿\n├⋗ ᴄʀᴇᴀᴛᴏʀ : <a href='tg://user?id={6199677027}'>ઝꪋઝꪋઽꫝꪱ</a>\n├⋗ ʟᴀɴɢᴜᴀɢᴇ : <code>Python3</code>\n├⋗ ʟɪʙʀᴀʀʏ : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio {__version__}</a>\n├⋗ ꜱᴏᴜʀᴄᴇ ᴄᴏᴅᴇ : <a href=https://t.me/ShadowKakashi>File Store Bot</a>\n├⋗ Main Channel : <a href=https://t.me/Anime_Bloodline>Anime Bloodline</a></b>"
+ABOUT_TXT = "<b>╔════════════⦿\n├⋗ ᴄʀᴇᴀᴛᴏʀ : <a href='tg://user?id={6199677027}'>ઝꪋઝꪋઽꫝꪱ</a>\n├⋗ ʟᴀɴɢᴜᴀɢᴇ : <code>Python3</code>\n├⋗ ʟɪʙʀᴀʀʏ : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio {__version__}</a>\n├⋗ ꜱᴏᴜʀᴄᴇ ᴄᴏᴅᴇ : <a href=https://t.me/ShadowKakashi>File Store Bot</a>\n├⋗ Main Channel : <a href=https://t.me/Anime_Bloodline>Anime Bloodline</b>"
 
 # start message
 START_MSG = os.environ.get("START_MESSAGE", "<b>Hello {first}\n\nI am Madara Uchiha a file store bot Made for @Anime_Bloodline ⚡</b>")
