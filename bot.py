@@ -48,7 +48,7 @@ class Bot(Client):
                 self.LOGGER(__name__).warning(a)
                 self.LOGGER(__name__).warning("Bot can't export invite link from Force Sub Channel 1!")
                 self.LOGGER(__name__).warning(f"Please double check the channel ID and make sure the bot is an admin in the channel with 'Invite Users via Link' permission. Current Channel ID: {self.FORCESUB_CHANNEL}")
-                self.LOGGER(__name__).info("\nBot Stopped. Join https://t.me/Hunters_Discussion for support")
+                self.LOGGER(__name__).info("\nBot Stopped. Join https://t.me/Anime_Bloodline for support")
                 sys.exit()
 
         if self.FORCESUB_CHANNEL2:
@@ -62,7 +62,7 @@ class Bot(Client):
                 self.LOGGER(__name__).warning(a)
                 self.LOGGER(__name__).warning("Bot can't export invite link from Force Sub Channel 2!")
                 self.LOGGER(__name__).warning(f"Please double check the channel ID and make sure the bot is an admin in the channel with 'Invite Users via Link' permission. Current Channel ID: {self.FORCESUB_CHANNEL2}")
-                self.LOGGER(__name__).info("\nBot Stopped. Join https://t.me/Hunters_Discussion for support")
+                self.LOGGER(__name__).info("\nBot Stopped. Join https://t.me/Anime_Bloodline for support")
                 sys.exit()
       
         if self.FORCESUB_CHANNEL3:
@@ -76,7 +76,7 @@ class Bot(Client):
                 self.LOGGER(__name__).warning(a)
                 self.LOGGER(__name__).warning("Bot can't export invite link from Force Sub Channel 3!")
                 self.LOGGER(__name__).warning(f"Please double check the channel ID and make sure the bot is an admin in the channel with 'Invite Users via Link' permission. Current Channel ID: {self.FORCESUB_CHANNEL3}")
-                self.LOGGER(__name__).info("\nBot Stopped. Join https://t.me/Hunters_Discussion for support")
+                self.LOGGER(__name__).info("\nBot Stopped. Join https://t.me/Anime_Bloodline for support")
                 sys.exit()
         try:
             db_channel = await self.get_chat(CHANNEL_ID)
@@ -86,18 +86,13 @@ class Bot(Client):
         except Exception as e:
             self.LOGGER(__name__).warning(e)
             self.LOGGER(__name__).warning(f"Make Sure bot is Admin in DB Channel, and Double check the CHANNEL_ID Value, Current Value {CHANNEL_ID}")
-            self.LOGGER(__name__).info("\nBot Stopped. Join https://t.me/Movies_Series_Universe for support")
+            self.LOGGER(__name__).info("\nBot Stopped. Join https://t.me/Anime_Bloodline for support")
             sys.exit()
 
         self.set_parse_mode(ParseMode.HTML)
-        self.LOGGER(__name__).info(f"Bot Running..!\n\nCreated by \nhttps://t.me/Movies_Series_Universe")
+        self.LOGGER(__name__).info(f"Bot Running..!\n\nCreated by \nhttps://t.me/Anime_Bloodline")
         self.LOGGER(__name__).info(f""" \n\n       
-░█████╗░███╗░░██╗██╗███╗░░░███╗███████╗██╗░░██╗██╗░░░██╗███╗░░██╗████████╗███████╗██████╗░░██████╗
-██╔══██╗████╗░██║██║████╗░████║██╔════╝██║░░██║██║░░░██║████╗░██║╚══██╔══╝██╔════╝██╔══██╗██╔════╝
-███████║██╔██╗██║██║██╔████╔██║█████╗░░███████║██║░░░██║██╔██╗██║░░░██║░░░█████╗░░██████╔╝╚█████╗░
-██╔══██║██║╚████║██║██║╚██╔╝██║██╔══╝░░██╔══██║██║░░░██║██║╚████║░░░██║░░░██╔══╝░░██╔══██╗░╚═══██╗
-██║░░██║██║░╚███║██║██║░╚═╝░██║███████╗██║░░██║╚██████╔╝██║░╚███║░░░██║░░░███████╗██║░░██║██████╔╝
-╚═╝░░╚═╝╚═╝░░╚══╝╚═╝╚═╝░░░░░╚═╝╚══════╝╚═╝░░╚═╝░╚═════╝░╚═╝░░╚══╝░░░╚═╝░░░╚══════╝╚═╝░░╚═╝╚═════╝░
+
                                           """)
         self.username = usr_bot_me.username
         #web-response
