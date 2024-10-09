@@ -6,7 +6,7 @@ import asyncio
 from pyrogram import filters
 from pyrogram.enums import ChatMemberStatus
 from config import ADMINS
-from database.database import present_admin, present_channel, present_channel2
+from database.database import present_admin, present_channel, present_channel2, present_channel3
 from pyrogram.errors.exceptions.bad_request_400 import UserNotParticipant
 from pyrogram.errors import FloodWait
 
@@ -24,7 +24,8 @@ async def is_subscribed(filter, client, update):
 
     channels_1 = await present_channel()  # Fetch the channels from the database
     channels_2 = await present_channel2()  # Fetch the channels from the database
-    channels = channels_1 + channels_2  # Combine both lists
+    channels_2 = await present_channel3()  # Fetch the channels from the database
+    channels = channels_1 + channels_2 + channels3 # Combine both lists
 
 import base64
 import re
@@ -41,8 +42,9 @@ async def is_subscribed(filter, client, update):
     
     FORCESUB_CHANNEL = await present_channel()  
     FORCESUB_CHANNEL2 = await present_channel2()
+    FORCESUB_CHANNEL3 = await present_channel3()
     
-    if not (FORCESUB_CHANNEL or FORCESUB_CHANNEL2):
+    if not (FORCESUB_CHANNEL or FORCESUB_CHANNEL2 or FORCESUB_CHANNEL3):
         return True
 
     user_id = update.from_user.id
@@ -55,7 +57,7 @@ async def is_subscribed(filter, client, update):
 
     member_status = ChatMemberStatus.OWNER, ChatMemberStatus.ADMINISTRATOR, ChatMemberStatus.MEMBER
 
-    for channel_id in [FORCESUB_CHANNEL, FORCESUB_CHANNEL2]:
+    for channel_id in [FORCESUB_CHANNEL, FORCESUB_CHANNEL2, FORCESUB_CHANNEL3]:
         if not channel_id:
             continue
 
