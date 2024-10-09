@@ -3,9 +3,9 @@ from pyrogram.types import Message
 
 from bot import Bot
 from config import OWNER_ID
-from database.database import present_admin, add_admin, full_adminbase, del_admin
+from database.database import present_admin, addadmin, full_adminbase, del_admin
 
-@Bot.on_message(filters.command("add_admin"))
+@Bot.on_message(filters.command("addadmin"))
 async def add_admin_command(client: Bot, message: Message):
     user_id = message.from_user.id
     if user_id != OWNER_ID:
@@ -13,7 +13,7 @@ async def add_admin_command(client: Bot, message: Message):
         return
 
     if len(message.command) != 2:
-        await message.reply_text("<b>You're using the wrong format. Please use it like this:</b> /add_admin {user_id}")
+        await message.reply_text("<b>You're using the wrong format. Please use it like this:</b> /addadmin {user_id}")
         return
 
     try:
@@ -29,7 +29,7 @@ async def add_admin_command(client: Bot, message: Message):
     full_name = f"{first_name} {last_name}".strip()
 
     # Add the user to the admin list in the database
-    added = await add_admin(admin_id_add)
+    added = await addadmin(admin_id_add)
     if added:
         await message.reply_text(f"<b>{first_name} - {admin_id_add} is already an admin.</b>")
     else:
