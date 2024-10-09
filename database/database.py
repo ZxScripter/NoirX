@@ -4,7 +4,7 @@
 
 import pymongo
 import asyncio
-from config import DB_URI, DB_NAME, FORCE_CHANNEL, FORCE_CHANNEL2
+from config import DB_URI, DB_NAME, FORCE_CHANNEL, FORCE_CHANNEL2, FORCE_CHANNEL3
 
 # Connect to MongoDB and select database
 dbclient = pymongo.MongoClient(DB_URI)
@@ -15,6 +15,7 @@ user_data = database['users']
 admin_data = database['admins']
 channel_data = database['channels']
 channel_data2 = database['channels2']
+channel_data3 = database['channels3']
 
 # Function to check if a user exists
 async def present_user(user_id: int):
@@ -98,4 +99,22 @@ async def add_2(channel1: int):
         print(f"Force subscribe channel 2 set successfully: {channel1}")
     except Exception as e:
         print(f"Failed to set force subscribe channel 1: {e}")
-        
+
+
+# Function to check if a channel exists
+async def present_channel2():
+    try:
+        config = channel_data2.find_one({})
+        return config.get('force_sub_channel_2', FORCE_CHANNEL2)
+    except Exception as e:
+        print(f"Failed to get force subscribe channels: {e}")
+        return FORCE_CHANNEL2
+
+async def add_2(channel1: int):
+    try:
+        await channel_data2.update_one({}, {'$set': {'force_sub_channel_2': channel1}}, upsert=True)
+        print(f"Force subscribe channel 2 set successfully: {channel1}")
+    except Exception as e:
+        print(f"Failed to set force subscribe channel 1: {e}")
+
+
