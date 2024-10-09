@@ -7,7 +7,7 @@ import pyrogram.utils
 from pyrogram.enums import ParseMode
 import sys
 from datetime import datetime
-from database.database import present_channel, present_channel2
+from database.database import present_channel, present_channel2, present_channel3
 
 from config import API_HASH, APP_ID, LOGGER, TG_BOT_TOKEN, TG_BOT_WORKERS, CHANNEL_ID, PORT
 
@@ -32,10 +32,11 @@ class Bot(Client):
         usr_bot_me = await self.get_me()
         self.uptime = datetime.now()
 
-        # Assuming add_1 and add_2 functions return the channel IDs for forced subscriptions
+        # Assuming add_1 and add_2 and add_3 functions return the channel IDs for forced subscriptions
         self.FORCESUB_CHANNEL = await present_channel()
         self.FORCESUB_CHANNEL2 = await present_channel2()
-
+        self.FORCESUB_CHANNEL3 = await present_channel3()
+        
         if self.FORCESUB_CHANNEL:
             try:
                 link = (await self.get_chat(self.FORCESUB_CHANNEL)).invite_link
@@ -61,6 +62,20 @@ class Bot(Client):
                 self.LOGGER(__name__).warning(a)
                 self.LOGGER(__name__).warning("Bot can't export invite link from Force Sub Channel 2!")
                 self.LOGGER(__name__).warning(f"Please double check the channel ID and make sure the bot is an admin in the channel with 'Invite Users via Link' permission. Current Channel ID: {self.FORCESUB_CHANNEL2}")
+                self.LOGGER(__name__).info("\nBot Stopped. Join https://t.me/Hunters_Discussion for support")
+                sys.exit()
+      
+        if self.FORCESUB_CHANNEL3:
+            try:
+                link = (await self.get_chat(self.FORCESUB_CHANNEL3)).invite_link
+                if not link:
+                    await self.export_chat_invite_link(self.FORCESUB_CHANNEL3)
+                    link = (await self.get_chat(self.FORCESUB_CHANNEL3)).invite_link
+                self.invitelink3 = link
+            except Exception as a:
+                self.LOGGER(__name__).warning(a)
+                self.LOGGER(__name__).warning("Bot can't export invite link from Force Sub Channel 3!")
+                self.LOGGER(__name__).warning(f"Please double check the channel ID and make sure the bot is an admin in the channel with 'Invite Users via Link' permission. Current Channel ID: {self.FORCESUB_CHANNEL3}")
                 self.LOGGER(__name__).info("\nBot Stopped. Join https://t.me/Hunters_Discussion for support")
                 sys.exit()
         try:
